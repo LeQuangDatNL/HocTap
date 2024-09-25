@@ -1,0 +1,5 @@
+001;le Quang Dat;chinhthuc;14
+002;Do Trong Hoang;hopdong;432
+004;Lan oi;chinhthuc;12
+005;Co oi;1244;345
+00end;dat;chinhthuc;12
