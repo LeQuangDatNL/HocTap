@@ -48,9 +48,11 @@ CREATE PROCEDURE CauE
 	@Thang INT ,
 	@Nam INT
 AS
-	SELECT *
-	FROM [Order] 
+	SELECT O.oID ,SUM(pPrice * odQTY) AS Gia
+	FROM [Order] AS O JOIN OrderDetail AS OD ON O.oID = OD.oID
+		JOIN Product ON OD.pID = Product.pID
 	WHERE YEAR(oDate) = @Nam and MONTH(oDate) = @Thang
+	GROUP BY  O.oID 
 CauE 3 , 2006
 /*
 f. Viết thủ tục với tham số truyền vào là năm. Thủ tục dùng để hiển thị doanh thu của mỗi
