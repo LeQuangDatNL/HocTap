@@ -1,9 +1,9 @@
 ﻿-- Tạo cơ sở dữ liệu
-CREATE DATABASE StoreDB;
+CREATE DATABASE BaiThucHanh6;
 GO
 
 -- Sử dụng cơ sở dữ liệu vừa tạo
-USE StoreDB;
+USE BaiThucHanh6;
 GO
 
 -- Tạo bảng Customer (Khách hàng)
